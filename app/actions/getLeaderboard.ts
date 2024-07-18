@@ -19,7 +19,7 @@ async function getLeaderboard(): Promise<{
     });
 
     const balance = transactions.reduce(
-      (sum, transaction) => sum + transaction.amount,
+      (sum, transaction) => sum + transaction.quantity,
       0
     );
 
