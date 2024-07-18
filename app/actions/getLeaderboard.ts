@@ -18,12 +18,12 @@ import { auth } from '@clerk/nextjs/server';
 //       where: { userId },
 //     });
 
-//     const balance = transactions.reduce(
+//     const quantity = transactions.reduce(
 //       (sum, transaction) => sum + transaction.quantity,
 //       0
 //     );
 
-//     return { text, quantity };
+//     return { quantity };
 //   } catch (error) {
 //     return { error: 'Database error' };
 //   }
