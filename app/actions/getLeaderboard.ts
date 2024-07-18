@@ -29,4 +29,4 @@ import { auth } from '@clerk/nextjs/server';
 //   }
 // }
 
-export default getLeaderboard;
+//export default getLeaderboard;
