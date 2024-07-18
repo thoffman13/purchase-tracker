@@ -1,4 +1,4 @@
-import getLeaderboard from '@/app/actions/getLeaderboard';
+//import getLeaderboard from '@/app/actions/getLeaderboard';
 import { addCommas } from '@/lib/utils';
 
 const Leaderboard = async () => {
