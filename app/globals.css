@@ -194,3 +194,18 @@ input[type='number'] {
 .list li:hover .delete-btn {
   opacity: 1;
 }
+
+.totalUserPurchase {
+  text-align: center;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.total1 {
+  border-right: 0.5px solid #000;
+}
