@@ -203,9 +203,4 @@ input[type='number'] {
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
-  text-align: center;
-}
-
-.total1 {
-  border-right: 0.5px solid #000;
 }

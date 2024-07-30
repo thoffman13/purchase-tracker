@@ -12,6 +12,7 @@ const TotalTransactions = async () => {
             <h3>Purchased</h3>
             <h2>{addCommas(Number(totalPurchases?.toFixed(0)))}</h2>
         </div>
+        <hr/>
         <div className='total2'>
             <h3>Spent</h3>
             <h2>${addCommas(Number(totalCosts?.toFixed(2)))}</h2>
