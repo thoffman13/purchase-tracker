@@ -4,12 +4,19 @@ import AddTransaction from '@/components/AddTransaction';
 import Leaderboard from '@/components/Leaderboard';
 import ItemCost from '@/components/ItemCost';
 import TransactionList from '@/components/TransactionList';
+import TotalTransactions from '@/components/TotalTransactions';
 
 const HomePage = async () => {
   const user = await currentUser();
 
   if (!user) {
-    return <Guest />;
+    return (
+      <div>
+        <Guest />
+        <br /><br /><br /><br />
+        <TotalTransactions />
+      </div>
+    );
   }
 
   return (
