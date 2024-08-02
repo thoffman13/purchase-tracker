@@ -26,10 +26,10 @@ const TransactionItem = ({ transaction }: { transaction: Transaction }) => {
     <li className="add">
       {transaction.text}
       <span>
-        {transaction.quantity}
+        {addCommas(Number(transaction.quantity?.toFixed(2)))}
       </span>
       <span>
-        ${transaction.price}
+        ${addCommas(Number(transaction.price?.toFixed(2)))}
       </span>
       <button
         onClick={() => handleDeleteTransaction(transaction.id)}
