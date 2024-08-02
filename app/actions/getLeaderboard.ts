@@ -44,7 +44,7 @@ async function getLeaderboard(): Promise<{
         const user = users.find((u) => u.clerkUserId === p.userId);
         return {
             userId: p.userId,
-            userName: user?.userName,
+            userName: (user.userName === undefined) ? user.userName : '',
             totalSpent: p._sum.price,
             totalPurchased: p._sum.quantity,
         };
