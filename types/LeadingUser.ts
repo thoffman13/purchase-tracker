@@ -1,6 +1,6 @@
 export interface LeadingUser {
-  userId: string;
-  userName: string;
-  totalPurchased: number;
-  totalSpent: number;
+  userId: string | null;
+  userName: string | null;
+  totalPurchased: number | null;
+  totalSpent: number | null;
 }
