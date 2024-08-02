@@ -1,13 +1,24 @@
-//import getLeaderboard from '@/app/actions/getLeaderboard';
+import getLeaderboard from '@/app/actions/getLeaderboard';
+import LeaderboardItem from './LeaderboardItem';
 import { addCommas } from '@/lib/utils';
+import { LeadingUser } from '@/types/LeadingUser';
 
 const Leaderboard = async () => {
-  //const { leaderboard } = await getLeaderboard();
+  const { leadingUsers, error } = await getLeaderboard();
+
+  if (error) {
+    return <p className='error'>{error}</p>;
+  }
 
   return (
     <>
-      {/* <h4>Leaderboard</h4>
-      <h1>${addCommas(Number(balance?.toFixed(2) ?? 0))}</h1> */}
+      <h4>Leaderboard</h4>
+      <ul className='list'>
+        {leadingUsers &&
+          leadingUsers.map((user: LeadingUser) => (
+            <LeaderboardItem key={user.userId} user={user} />
+          ))}
+      </ul>
     </>
   );
 };
