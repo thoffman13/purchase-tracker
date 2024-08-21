@@ -30,6 +30,8 @@ model Transaction {
   text  String
   quantity Int
   price  Float
+  volume Float
+  measurementUnit String
   // Relation to user
   userId  String
   user User @relation(fields: [userId], references: [clerkUserId], onDelete: Cascade)
