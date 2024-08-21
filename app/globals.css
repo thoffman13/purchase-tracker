@@ -23,7 +23,7 @@ body {
 }
 
 .navbar {
-  background: #000;
+  background: #e41c38;
   color: #fff;
 }
 
@@ -31,11 +31,19 @@ body {
   color: #fff;
 }
 
-.navbar button,
+.navbar button {
+  border: 0;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
+
 .guest button {
   border: 0;
   border-radius: 5px;
-  background: rebeccapurple;
+  background: #e41c38;
   color: #fff;
   padding: 0.5rem 2rem;
   cursor: pointer;
