@@ -31,6 +31,9 @@ const TransactionItem = ({ transaction }: { transaction: Transaction }) => {
       <span>
         ${addCommas(Number(transaction.price?.toFixed(2)))}
       </span>
+      <span>
+        {addCommas(Number(transaction.volume?.toFixed(2)))} {transaction.measurementUnit}
+      </span>
       <button
         onClick={() => handleDeleteTransaction(transaction.id)}
         className="delete-btn"
