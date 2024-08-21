@@ -32,7 +32,7 @@ const AddTransaction = () => {
         </div>
         <div className='form-control'>
           <label htmlFor='quantity'>
-            Quantity of Case
+            Case Quantity
           </label>
           <input
             type='number'
@@ -52,6 +52,29 @@ const AddTransaction = () => {
             placeholder='Enter Cost...'
             step='0.01'
           />
+        </div>
+        <div className='form-control'>
+          <label htmlFor='volume'>
+            Volume of Purchase
+          </label>
+          <input
+            type='number'
+            name='volume'
+            id='volume'
+            placeholder='Volume of each can/bottle...'
+            step='0.01'
+          />
+        </div>
+        <div className='form-control'>
+          <label htmlFor='measurementUnit'>
+            Unit of Measurement
+          </label>
+          <br />
+          <select name='measurementUnit' id='measurementUnit'>
+            <option value='oz'>oz</option>
+            <option value='ml'>ml</option>
+            <option value='L'>L</option>
+          </select>
         </div>
         <button className='btn'>Add Purchase</button>
       </form>
