@@ -3,6 +3,8 @@ export interface Transaction {
   text: string;
   quantity: number;
   price: number;
+  volume: number;
+  measurementUnit: string;
   userId: string;
   createdAt: Date;
 }
