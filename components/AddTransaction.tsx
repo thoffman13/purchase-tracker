@@ -69,7 +69,7 @@ const AddTransaction = () => {
           <label htmlFor='measurementUnit'>
             Unit of Measurement
           </label>
-          <br />
+          
           <select name='measurementUnit' id='measurementUnit'>
             <option value='oz'>oz</option>
             <option value='ml'>ml</option>
