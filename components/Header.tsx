@@ -9,9 +9,6 @@ const Header = async () => {
       <div className='navbar-container'>
         <h2>Purchase Tracker</h2>
         <div>
-          <SignedOut>
-            <SignInButton />
-          </SignedOut>
           <SignedIn>
             <UserButton />
           </SignedIn>
