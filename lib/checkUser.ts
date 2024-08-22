@@ -26,6 +26,7 @@ export const checkUser = async () => {
     data: {
       clerkUserId: user.id,
       imageUrl: user.imageUrl,
+      email: user.emailAddresses[0].emailAddress,
       userName: user.username,
     },
   });
